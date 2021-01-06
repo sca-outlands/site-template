@@ -9,14 +9,16 @@ src/web/libraries/
 src/vendor/
 
 #Exclude core files, controlled by drupal-scaffold
-src/.ht.router.php
-src/autoload.php
-src/example.gitignore
-src/index.php
-src/INSTALL.txt
-src/README.txt
-src/update.php
-src/web.config
+src/web/.ht.router.php
+src/web/autoload.php
+src/web/example.gitignore
+src/web/index.php
+src/web/INSTALL.txt
+src/web/README.txt
+src/web/update.php
+src/web/web.config
+src/web/sites/example.*.php
+
 
 
 

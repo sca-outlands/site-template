@@ -13,7 +13,7 @@ cp $CONF_PATH/drupal/settings.php $SETTINGS && chmod 444 $SETTINGS
 
 
 # Build dependencies
-cp $BASE_PATH && php -d memory_limit=2048M /usr/local/bin/composer install --prefer-dist
+cd $BASE_PATH && php -d memory_limit=2048M /usr/local/bin/composer install --prefer-dist
 
 # Execute docker cmd replacement
 printf "\n\n >> Starting the app \n\n"
