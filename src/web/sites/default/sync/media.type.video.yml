@@ -1,0 +1,17 @@
+uuid: c840e799-0939-43ee-b8c0-a9938375f736
+langcode: en
+status: true
+dependencies: {  }
+id: video
+label: Video
+description: 'Add a remote video hosted on Vimeo or YouTube'
+source: 'oembed:video'
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  thumbnails_directory: 'public://oembed_thumbnails'
+  providers:
+    - YouTube
+    - Vimeo
+  source_field: field_media_oembed_video
+field_map: {  }

@@ -1,0 +1,24 @@
+uuid: 52d6c483-6f85-4977-99fa-affaf4921459
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_wimble_id
+  module:
+    - user
+id: user.user.field_wimble_id
+field_name: field_wimble_id
+entity_type: user
+bundle: user
+label: 'Wimble ID'
+description: 'Enter your "PersonID" from wimble.outlandsheralds.org.  Browse to your record, then look at the URL.  http://wimble.outlandsheralds.org/individual_record.php?PersonID=[COPY THESE NUMBERS]'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

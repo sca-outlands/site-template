@@ -1,0 +1,8 @@
+uuid: 28a68fd4-6191-419d-aa1a-5a1cdfc3054c
+langcode: en
+status: true
+dependencies: {  }
+id: anonymous-menu
+label: 'Anonymous Menu'
+description: ''
+locked: false

@@ -1,0 +1,15 @@
+uuid: 1f6199d8-8b98-4ccc-a233-e5a5e9d4257a
+name: 'Site Template'
+mail: webminister@outlands.org
+slogan: ''
+page:
+  403: /user/login
+  404: ''
+  front: /node/3
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

@@ -1,0 +1,54 @@
+uuid: 54815c1b-e8b9-4ce8-a081-e1cbcd1b3c03
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.wysiwyg_content
+  module:
+    - ckeditor
+format: wysiwyg_content
+editor: ckeditor
+settings:
+  toolbar:
+    rows:
+      -
+        -
+          name: Formatting
+          items:
+            - Styles
+            - Bold
+            - Italic
+            - RemoveFormat
+        -
+          name: Links
+          items:
+            - DrupalLink
+            - DrupalUnlink
+        -
+          name: Lists
+          items:
+            - BulletedList
+            - NumberedList
+        -
+          name: Media
+          items:
+            - Blockquote
+            - DrupalImage
+            - DrupalMediaLibrary
+        -
+          name: Tools
+          items:
+            - Source
+  plugins:
+    stylescombo:
+      styles: ''
+    language:
+      language_list: un
+image_upload:
+  status: false
+  scheme: public
+  directory: inline-images
+  max_size: ''
+  max_dimensions:
+    width: null
+    height: null

@@ -1,0 +1,18 @@
+uuid: 31125ef2-e2f9-42ad-9c4f-61b4e5dd1f43
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupal8_w3css_theme
+id: pagetitle
+theme: drupal8_w3css_theme
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

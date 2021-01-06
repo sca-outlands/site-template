@@ -1,0 +1,27 @@
+#Ignore unnecessary docker structures
+etc/mysql/*
+sync/
+
+#Exclude things included by composer
+src/web/themes/contrib/
+src/web/core/
+src/web/libraries/
+src/vendor/
+
+#Exclude core files, controlled by drupal-scaffold
+src/.ht.router.php
+src/autoload.php
+src/example.gitignore
+src/index.php
+src/INSTALL.txt
+src/README.txt
+src/update.php
+src/web.config
+
+
+
+# Exclude drupal site-specific stuff
+src/web/sites/*/settings*.php
+src/web/sites/*/files
+
+

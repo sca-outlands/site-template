@@ -1,0 +1,23 @@
+uuid: b4f340ee-3328-4535-af65-2947eb18d903
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.competition.field_open
+    - taxonomy.vocabulary.competition
+  module:
+    - text
+id: taxonomy_term.competition.default
+targetEntityType: taxonomy_term
+bundle: competition
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_open: true

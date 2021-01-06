@@ -1,0 +1,29 @@
+uuid: d79ba5b5-f5ce-4ed0-af19-6ebfd0bbd8e0
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.medium
+    - image.style.thumbnail
+  theme:
+    - drupal8_w3css_theme
+id: content_page_inline
+label: 'Content Page Inline'
+image_style_mappings:
+  -
+    breakpoint_id: drupal8_w3css_theme.screen-lg-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: medium
+  -
+    breakpoint_id: drupal8_w3css_theme.screen-md-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: medium
+  -
+    breakpoint_id: drupal8_w3css_theme.screen-sm-min
+    multiplier: 1x
+    image_mapping_type: image_style
+    image_mapping: thumbnail
+breakpoint_group: drupal8_w3css_theme
+fallback_image_style: medium

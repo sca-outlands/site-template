@@ -1,0 +1,20 @@
+uuid: 66348788-921d-4f1e-bd17-8edb7f68ad47
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_modern_name
+  module:
+    - user
+id: user.user.field_modern_name
+field_name: field_modern_name
+entity_type: user
+bundle: user
+label: 'Modern Name'
+description: 'Your modern name will not be displayed publicly.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

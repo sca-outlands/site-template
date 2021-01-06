@@ -1,0 +1,33 @@
+uuid: b75813ee-85de-4317-8b08-0beb0ae1d3ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.authenticated-menu
+  module:
+    - system
+    - user
+  theme:
+    - drupal8_w3css_theme
+id: authenticatedmenu
+theme: drupal8_w3css_theme
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'system_menu_block:authenticated-menu'
+settings:
+  id: 'system_menu_block:authenticated-menu'
+  label: 'Authenticated Menu'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    roles:
+      authenticated: authenticated
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'

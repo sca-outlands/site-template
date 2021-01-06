@@ -1,0 +1,14 @@
+uuid: f0de132a-4c25-431f-a2e6-975bfe13386f
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.officer
+  module:
+    - user
+id: user_add_role_action.officer
+label: 'Add the Officer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: officer

@@ -1,0 +1,15 @@
+uuid: e0628326-9fc4-4a70-8ee5-0508c4001e3b
+langcode: en
+status: true
+dependencies: {  }
+name: gallery_grid
+label: 'Gallery Grid'
+effects:
+  364f9dd7-f6eb-4768-b25e-535869a43eac:
+    uuid: 364f9dd7-f6eb-4768-b25e-535869a43eac
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 220
+      height: 220
+      anchor: center-center

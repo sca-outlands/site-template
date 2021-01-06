@@ -1,0 +1,11 @@
+uuid: 4255277b-0564-4e74-b835-f13a872be9b2
+langcode: en
+status: true
+dependencies:
+  config:
+    - image.style.medium
+id: contributor_photo
+label: 'Contributor Photo'
+image_style_mappings: {  }
+breakpoint_group: responsive_image
+fallback_image_style: medium

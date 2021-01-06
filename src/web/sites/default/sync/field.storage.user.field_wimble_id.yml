@@ -1,0 +1,20 @@
+uuid: 25906929-f1a3-4510-894a-b9f57a6b7ecb
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+id: user.field_wimble_id
+field_name: field_wimble_id
+entity_type: user
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

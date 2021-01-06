@@ -1,0 +1,84 @@
+uuid: b6b17aad-010c-440e-877d-2ad14b21c49d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.user.user.field_contact_number
+    - field.field.user.user.field_i_grant_permission_for_thi
+    - field.field.user.user.field_modern_name
+    - field.field.user.user.field_photo
+    - field.field.user.user.field_sca_name
+    - field.field.user.user.field_sca_title
+    - field.field.user.user.field_wimble_id
+  module:
+    - telephone
+    - user
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_contact_number:
+    weight: 6
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_i_grant_permission_for_thi:
+    type: boolean_checkbox
+    weight: 5
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  field_modern_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_photo:
+    type: entity_reference_autocomplete
+    weight: 4
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_sca_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sca_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_wimble_id:
+    weight: 7
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  language: true
+  path: true
+  timezone: true

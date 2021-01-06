@@ -1,0 +1,70 @@
+uuid: 294f77be-22ae-4088-bc58-f7041f47ad5e
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_form_mode.user.register
+    - field.field.user.user.field_contact_number
+    - field.field.user.user.field_i_grant_permission_for_thi
+    - field.field.user.user.field_modern_name
+    - field.field.user.user.field_photo
+    - field.field.user.user.field_sca_name
+    - field.field.user.user.field_sca_title
+    - field.field.user.user.field_wimble_id
+  module:
+    - telephone
+    - user
+id: user.user.register
+targetEntityType: user
+bundle: user
+mode: register
+content:
+  account:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_contact_number:
+    weight: 4
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: telephone_default
+    region: content
+  field_modern_name:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sca_name:
+    weight: 2
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_sca_title:
+    weight: 3
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_wimble_id:
+    weight: 5
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+hidden:
+  field_i_grant_permission_for_thi: true
+  field_photo: true
+  language: true
+  path: true
+  timezone: true

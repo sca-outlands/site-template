@@ -1,0 +1,14 @@
+uuid: db35ac22-c5b9-41c7-8f8b-2021804c8c1d
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.officer
+  module:
+    - user
+id: user_remove_role_action.officer
+label: 'Remove the Officer role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: officer

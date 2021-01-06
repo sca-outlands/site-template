@@ -1,0 +1,8 @@
+role_to_select:
+  contributor: contributor
+  administrator: '0'
+  officer: '0'
+  judge: '0'
+registration_mode: admin
+_core:
+  default_config_hash: o1wWkhSOJotsHFgvzESaUOiTWhLak62cKBDyEtewAIM

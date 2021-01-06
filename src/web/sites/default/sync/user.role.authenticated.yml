@@ -1,0 +1,14 @@
+uuid: 5ca1458a-4834-4a09-9a01-89476a29f0f4
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dJ0L2DNSj5q6XVZAGsuVDpJTh5UeYkIPwKrUOOpr8YI
+id: authenticated
+label: 'Authenticated user'
+weight: -9
+is_admin: false
+permissions:
+  - 'access content'
+  - 'search content'
+  - 'view media'

@@ -1,0 +1,8 @@
+uuid: a341999d-6a66-4727-af68-c3d40e42a7dc
+langcode: en
+status: true
+dependencies: {  }
+id: authenticated-menu
+label: 'Authenticated Menu'
+description: ''
+locked: false

@@ -1,0 +1,20 @@
+uuid: 5ed9397d-a252-4e39-9a77-54e525af2398
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_sca_title
+  module:
+    - user
+id: user.user.field_sca_title
+field_name: field_sca_title
+entity_type: user
+bundle: user
+label: 'SCA Title'
+description: 'Leave blank if you do not have a title.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

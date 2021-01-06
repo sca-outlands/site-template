@@ -1,0 +1,24 @@
+uuid: f618389b-8b39-42d1-9ac8-4f2cf74750b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_i_grant_permission_for_thi
+  module:
+    - user
+id: user.user.field_i_grant_permission_for_thi
+field_name: field_i_grant_permission_for_thi
+entity_type: user
+bundle: user
+label: 'I grant permission for this photo to be displayed publicly.'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1
+default_value_callback: ''
+settings:
+  on_label: 'true'
+  off_label: 'false'
+field_type: boolean

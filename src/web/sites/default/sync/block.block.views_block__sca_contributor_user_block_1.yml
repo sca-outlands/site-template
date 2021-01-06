@@ -1,0 +1,31 @@
+uuid: 7aa02b71-5e6e-428b-9bb1-525fcd713979
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sca_contributor_user
+  module:
+    - system
+    - views
+  theme:
+    - drupal8_w3css_theme
+id: views_block__sca_contributor_user_block_1
+theme: drupal8_w3css_theme
+region: sidebar_second
+weight: -4
+provider: null
+plugin: 'views_block:sca_contributor_user-block_1'
+settings:
+  id: 'views_block:sca_contributor_user-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '/gallery/user/*'
+    negate: false
+    context_mapping: {  }
