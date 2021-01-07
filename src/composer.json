@@ -1,9 +1,9 @@
 {
-    "name": "outlands/auth",
+    "name": "sca-outlands/site-template",
     "description": "Kingdom of the Outlands Site Template",
     "type": "project",
     "license": "GPL-2.0-or-later",
-    "homepage": "https://auth.outlands.org",
+    "homepage": "https://www.outlands.org",
     "repositories": [
         {
             "type": "composer",
@@ -62,4 +62,3 @@
         }
     }
 }
-
