@@ -1,7 +1,7 @@
 version: '2'
 services:
   mysql:
-    image: mysql:5.7
+    build: ./mysql
     environment:
       MYSQL_DATABASE: sca_template
       MYSQL_ALLOW_EMPTY_PASSWORD: 1
