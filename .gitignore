@@ -3,7 +3,6 @@
 
 #Ignore unnecessary docker structures
 etc/mysql/*
-sync/
 
 #Exclude things included by composer
 src/web/themes/contrib/
