@@ -1,0 +1,5 @@
+# Vim temp files
+.*.swp
+
+# Files mounted via volumes
+docker-entrypoint-initdb.d/
