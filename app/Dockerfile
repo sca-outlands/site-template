@@ -10,6 +10,9 @@ RUN \
 COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
+# Remove symlink to elsewhere; we're going to replace this whole directory
+RUN rm /var/www/html
+
 # Set the default working directory
 VOLUME ["/var/www/html"]
 WORKDIR /var/www/html/
