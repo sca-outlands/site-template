@@ -1,3 +1,6 @@
+# Vim temp files
+.*.swp
+
 #Ignore unnecessary docker structures
 etc/mysql/*
 sync/
