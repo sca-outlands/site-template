@@ -9,8 +9,8 @@ RUN \
   apt-get -y update && \
   apt-get -y install vim git patch
 
-COPY ./entrypoint.sh /entrypoint.sh
-RUN chmod +x /entrypoint.sh
+COPY ./cmd.sh /cmd.sh
+RUN chmod +x /cmd.sh
 
 # Remove symlink to elsewhere; we're going to replace this whole directory
 RUN rm /var/www/html
@@ -18,5 +18,5 @@ RUN rm /var/www/html
 # Set the default working directory
 WORKDIR /var/www/html/
 
-# Override any previous entrypoint
-CMD ["/entrypoint.sh"]
+# Override any previous cmd
+CMD ["/cmd.sh"]
