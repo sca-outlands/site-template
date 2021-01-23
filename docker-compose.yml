@@ -1,7 +1,7 @@
 version: '2'
 services:
   mysql:
-    image: mysql:5.7
+    build: ./mysql
     environment:
       MYSQL_DATABASE: sca_template
       MYSQL_ALLOW_EMPTY_PASSWORD: 1
@@ -9,16 +9,16 @@ services:
     ports:
       - "3306:3306"
     volumes:
-      - ./etc/mysql:/docker-entrypoint-initdb.d
+      - ./mysql/docker-entrypoint-initdb.d:/docker-entrypoint-initdb.d
   app:
-    build: ./
+    build: ./app
     image: sca/site-template:latest
     container_name: outlands_template
     ports:
       - 8080:80
     volumes:
-      - ./etc:/mnt/etc
-      - ./src:/var/www/html
+      - ./app/mnt/etc:/mnt/etc
+      - ./app/var/www/html:/var/www/html
     volumes_from:
       - mysql
     restart: always
@@ -31,4 +31,3 @@ services:
       BASE_PATH: /var/www/html
       ROOT_PATH: /var/www/html/web
       CONF_PATH: /mnt/etc
-

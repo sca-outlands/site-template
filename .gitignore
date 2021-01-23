@@ -1,29 +1,26 @@
-#Ignore unnecessary docker structures
-etc/mysql/*
-sync/
+# Vim temp files
+.*.swp
 
-#Exclude things included by composer
-src/web/themes/contrib/
-src/web/core/
-src/web/libraries/
-src/vendor/
+# Ignore unnecessary docker structures
+mysql/docker-entrypoint-initdb.d/
 
-#Exclude core files, controlled by drupal-scaffold
-src/web/.ht.router.php
-src/web/autoload.php
-src/web/example.gitignore
-src/web/index.php
-src/web/INSTALL.txt
-src/web/README.txt
-src/web/update.php
-src/web/web.config
-src/web/sites/example.*.php
+# Exclude things included by composer
+app/var/www/html/web/themes/contrib/
+app/var/www/html/web/core/
+app/var/www/html/web/libraries/
+app/var/www/html/vendor/
 
-
-
+# Exclude core files, controlled by drupal-scaffold
+app/var/www/html/web/.ht.router.php
+app/var/www/html/web/autoload.php
+app/var/www/html/web/example.gitignore
+app/var/www/html/web/index.php
+app/var/www/html/web/INSTALL.txt
+app/var/www/html/web/README.txt
+app/var/www/html/web/update.php
+app/var/www/html/web/web.config
+app/var/www/html/web/sites/example.*.php
 
 # Exclude drupal site-specific stuff
-src/web/sites/*/settings*.php
-src/web/sites/*/files
-
-
+app/var/www/html/web/sites/*/settings*.php
+app/var/www/html/web/sites/*/files

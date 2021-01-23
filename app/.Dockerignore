@@ -1,0 +1,6 @@
+# Vim temp files
+.*.swp
+
+# Files mounted via volumes
+etc/
+var/www/html/
