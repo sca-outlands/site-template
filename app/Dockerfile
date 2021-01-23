@@ -7,7 +7,7 @@ MAINTAINER Graf Iohann der Vuhs
 RUN \
   apt-get -y update && apt-get -y install vim git patch
 
-COPY ./etc/entrypoint.sh /entrypoint.sh
+COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
 
 # Set the default working directory
