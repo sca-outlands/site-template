@@ -14,7 +14,6 @@ RUN chmod +x /entrypoint.sh
 RUN rm /var/www/html
 
 # Set the default working directory
-VOLUME ["/var/www/html"]
 WORKDIR /var/www/html/
 
 # Override any previous entrypoint
