@@ -5,7 +5,9 @@ MAINTAINER Graf Iohann der Vuhs
 
 # Add some necessary utilities
 RUN \
-  apt-get -y update && apt-get -y install vim git patch
+  export DEBIAN_FRONTEND=noninteractive && \
+  apt-get -y update && \
+  apt-get -y install vim git patch
 
 COPY ./entrypoint.sh /entrypoint.sh
 RUN chmod +x /entrypoint.sh
