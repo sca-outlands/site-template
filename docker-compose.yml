@@ -31,4 +31,3 @@ services:
       BASE_PATH: /var/www/html
       ROOT_PATH: /var/www/html/web
       CONF_PATH: /mnt/etc
-

@@ -1,16 +1,16 @@
 # Vim temp files
 .*.swp
 
-#Ignore unnecessary docker structures
+# Ignore unnecessary docker structures
 mysql/docker-entrypoint-initdb.d/
 
-#Exclude things included by composer
+# Exclude things included by composer
 app/var/www/html/web/themes/contrib/
 app/var/www/html/web/core/
 app/var/www/html/web/libraries/
 app/var/www/html/vendor/
 
-#Exclude core files, controlled by drupal-scaffold
+# Exclude core files, controlled by drupal-scaffold
 app/var/www/html/web/.ht.router.php
 app/var/www/html/web/autoload.php
 app/var/www/html/web/example.gitignore
@@ -21,11 +21,6 @@ app/var/www/html/web/update.php
 app/var/www/html/web/web.config
 app/var/www/html/web/sites/example.*.php
 
-
-
-
 # Exclude drupal site-specific stuff
 app/var/www/html/web/sites/*/settings*.php
 app/var/www/html/web/sites/*/files
-
-
